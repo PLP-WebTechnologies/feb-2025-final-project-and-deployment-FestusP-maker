@@ -4,45 +4,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About - TheConnect</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-image: url('Image.png'); /* Replace with your image path */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    header {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+    }
+    header h1 { font-size: 24px; color: #000; }
+    nav ul { list-style: none; display: flex; gap: 25px; }
+    nav ul li a { text-decoration: none; color: #333; font-weight: bold; }
+    nav ul li a:hover { color: #0077cc; }
+
+    main {
+      flex: 1;
+      padding: 40px;
+      background-color: rgba(244, 244, 244, 0.95); /* Slight transparency */
+      border-radius: 10px;
+      margin: 20px;
+    }
+    footer {
+      background-color: red;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    footer .socials { margin-bottom: 10px; }
+    footer .socials i { margin: 0 10px; font-size: 20px; cursor: pointer; }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
+    <h1>TheConnect</h1>
     <nav>
-      <h1>TheConnect</h1>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="posts.html">Posts</a></li>
+        <li><a href="posts.html">Blog</a></li>
       </ul>
     </nav>
   </header>
-
   <main>
-    <section>
-      <h2>About Us</h2>
-      <p>TheConnect is a blog where we share ideas, tutorials, and personal experiences in tech and everyday life. Our mission is to connect people with valuable information through storytelling and education.</p>
-    </section>
+    <h2>About TheConnect</h2>
+    <p>TheConnect is a personal blog sharing tutorials, technology insights, and engaging stories that inspire and educate.</p>
+    <p>Founded in 2025, TheConnect is driven by passion for tech and youth empowerment through accessible knowledge.</p>
   </main>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <hr>
   <footer>
+    <div class="socials">
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-instagram-square"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
     <p>&copy; 2025 TheConnect. All rights reserved.</p>
   </footer>
 </body>
-</html
+</html>
