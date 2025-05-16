@@ -5,164 +5,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TheConnect</title>
   <style>
-    * {
+    body {y {
+      font-family: Arial, sans-serif;y: Arial, sans-serif;
+      background: #f4f4f4; #f4f4f4;
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      padding: 0; padding: 0;
+      min-height: 100vh;      min-height: 100vh;
+      display: flex;lay: flex;
+      flex-direction: column;serif;
     }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      background-image: url('Image.png'); 
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
     header {
-      background-color: #fff;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #ccc;
-    }
-
-    header h1 {
-      font-size: 24px;
-      color: #000;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    nav ul li a:hover {
-      color: #0077cc;
-    }
-
-    main {
-      flex: 1;
-      padding: 40px;
-      background-color: #f4f4f4;
-    }
-
-    .hero {
-      margin-bottom: 40px;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    .posts-preview article {
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 600px;
-      margin: 0 auto;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .posts-preview h3 {
-      margin-bottom: 10px;
-    }
-
-    .posts-preview a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-
-    footer {
-      background-color: red;
+      background: #0077cc;olumn;
       color: #fff;
-      text-align: center;
-      padding: 20px;
+      padding: 10px 0;
+      text-align: center;kground-size: cover;
     }
-
-    footer .socials {
-      margin-bottom: 10px;
+    nav ul {
+      list-style: none; list-style: none;
+      padding: 0;      padding: 0;
+      margin: 0;: 0;
+      display: flex;nd-color: #fff;
+      justify-content: center;nter;adding: 20px 40px;
+      gap: 20px;
     }
-
-    footer .socials i {
-      margin: 0 10px;
+    nav ul li {av ul li {
+      display: inline;: inline;
+    }
+    nav ul li a {av ul li a {
+      color: #fff; #fff;
+      text-decoration: none;e;
+      font-weight: bold; bold;
+      transition: color 0.2s;r 0.2s;
+    }
+    nav ul li a:hover {av ul li a:hover {
+      color: #ffd700; #ffd700;
+    }
+    main {
+      flex: 1; flex: 1;
+      max-width: 800px;: 800px;
+      margin: 40px auto 0 auto;o 0 auto;
+      background: #fff;f;
+      padding: 30px; padding: 30px;
+      border-radius: 8px;-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);rgba(0,0,0,0.1);
+    }
+    .socials {
+      margin-bottom: 10px; 10px;
+    }
+    .socials i {socials i {
+      margin: 0 5px;0 5px;
       font-size: 20px;
-      cursor: pointer;
+      cursor: pointer; cursor: pointer;
     }
-
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
+    footer {
+      background-color: red;: red;
+      color: #fff; color: #fff;
+      text-align: center;-align: center;
+      padding: 20px;adding: 20px;
+      margin-top: 40px;margin-top: 40px;
+    }
+    footer a {
+      color: #fff;or: #fff;
+      text-decoration: underline;-decoration: underline;
+    }
+    @media (max-width: 700px) {
+      main {
+        padding: 10px;
+        margin: 10px;gin: 10px;
       }
-
-      nav ul {
-        flex-direction: column;
-        align-items: flex-start;
+      nav ul {l {
+        flex-direction: column;olumn;
         gap: 10px;
-        margin-top: 10px;
-      }
-
-      .posts-preview article {
-        width: 100%;
       }
     }
   </style>
-
-  <!-- Font Awesome CDN for social icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>ont Awesome CDN for social icons -->
+</head>pt src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <body>
   <header>
     <h1>TheConnect</h1>
-    <nav>
+    <nav>TheConnect</h1>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="posts.html">Blog</a></li>
-      </ul>
+        <li><a href="about.html">About</a></li>i>
+        <li><a href="contact.html">Contact</a></li>i>
+        <li><a href="posts.html">Blog</a></li>ntact</a></li>
+      </ul>i><a href="posts.html">Blog</a></li>
     </nav>
   </header>
-
   <main>
-    <section class="hero">
-      <h2>Welcome to TheConnect</h2>
-      <p>Sharing thoughts, tutorials, and idea and connecting with the world.</p>
-      <p>Join us in exploring the latest trends and insights.</p>
-    </section>
-
-    <!-- ...existing code... -->
-<section class="posts-preview">
-  <article>
-    <h3>Trending Post On TheConnect</h3>
-    <p>Checkout the trending post on TheConnect.</p>
-    <a href="post1.html">Read more</a>
-  </article>
-</section>
-<!-- ...existing code... -->
+    <!-- PAGE CONTENT GOES HERE -->
+    <h2>Welcome to TheConnect</h2>on class="hero">
+    <p>This is a sample page. Replace this content with your own for each page.</p>
   </main>
+  <footer>oin us in exploring the latest trends and insights.</p>
+    <div class="socials">
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-instagram-square"></i>ction class="posts-preview">
+      <i class="fab fa-linkedin"></i>article>
 
+
+
+
+
+
+
+
+
+
+
+
+
+</html></body>  </footer>    <p>&copy; 2025 TheConnect. All rights reserved.</p>    </div>      <a href="policy.html">Privacy Policy</a>    <div style="margin-bottom: 10px;">    </div>      <strong>Contact:</strong> <a href="tel:+264817922616">+264817922616</a>      <strong>Email:</strong> <a href="mailto:petrusfestus78@gmail.com">petrusfestus78@gmail.com</a><br>      <strong>Location:</strong> Windhoek, Namibia<br>    <div style="margin-bottom: 10px;">    </div>        <h3>Trending Post On TheConnect</h3>
+        <p>Checkout the trending post on TheConnect.</p>
+        <a href="post1.html">Read more</a>
+      </article>
+    </section>
+  </main>
   <footer>
     <div class="socials">
       <i class="fab fa-facebook-square"></i>
       <i class="fab fa-instagram-square"></i>
       <i class="fab fa-linkedin"></i>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <strong>Location:</strong> Windhoek, Namibia<br>
+      <strong>Email:</strong> <a href="mailto:petrusfestus78@gmail.com">petrusfestus78@gmail.com</a><br>
+      <strong>Contact:</strong> <a href="tel:+264817922616">+264817922616</a>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <a href="policy.html">Privacy Policy</a>
     </div>
     <p>&copy; 2025 TheConnect. All rights reserved.</p>
   </footer>

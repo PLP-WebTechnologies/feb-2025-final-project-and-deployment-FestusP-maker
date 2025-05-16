@@ -3,65 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rockaz: Rockaz 2.0</title>
+  <title>TheConnect</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background: #f4f4f4;
       margin: 0;
       padding: 0;
-      font-size: 15px; /* Reduced base font size */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
-    .container {
-      max-width: 700px;
-      margin: 40px auto;
+    header {
+      background: #0077cc;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 40px auto 0 auto;
       background: #fff;
       padding: 30px;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    h1 {
-      font-size: 1.7em; /* Smaller heading */
-      margin-bottom: 18px;
+    .socials {
+      margin-bottom: 10px;
     }
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      display: block;
+    .socials i {
+      margin: 0 5px;
+      font-size: 20px;
+      cursor: pointer;
     }
-    a {
-      color: #0077cc;
-      text-decoration: none;
-      font-size: 1em;
+    footer {
+      background-color: red;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
-    a:hover {
+    footer a {
+      color: #fff;
       text-decoration: underline;
     }
     @media (max-width: 700px) {
-      .container {
-        padding: 15px;
+      main {
+        padding: 10px;
+        margin: 10px;
       }
-      h1 {
-        font-size: 1.2em;
-      }
-      body {
-        font-size: 14px;
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
       }
     }
   </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Rockaz: Inspiration from the Kwaito Master</h1>
-    <img src="rockaz.jpeg" alt="Rockaz Mountain" />
-    <p>
-      Namibian kwaito and urban music icon Exit Rockaz (real name David Shikalepo) released his latest album, Rockaz 2.0, on April 20, 2025. This 19-track project marks a significant evolution in his two-decade-long career, blending kwaito, hip-hop, Afrobeat, and Amapiano influences while maintaining his signature high-energy style.
-    </p>
-    <p>
-      He said, "Oshikombo osha pumako, O ROCKAZ!"
-    </p>
-    <a href="index.html">&larr; Back to Home</a>
-  </div>
+  <header>
+    <h1>TheConnect</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="posts.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- PAGE CONTENT GOES HERE -->
+    <h2>Welcome to TheConnect</h2>
+    <p>This is a sample page. Replace this content with your own for each page.</p>
+  </main>
+  <footer>
+    <div class="socials">
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-instagram-square"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <strong>Location:</strong> Windhoek, Namibia<br>
+      <strong>Email:</strong> <a href="mailto:petrusfestus78@gmail.com">petrusfestus78@gmail.com</a><br>
+      <strong>Contact:</strong> <a href="tel:+264817922616">+264817922616</a>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <a href="policy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; 2025 TheConnect. All rights reserved.</p>
+  </footer>
 </body>
 </html>
